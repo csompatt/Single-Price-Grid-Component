@@ -1,2 +1,132 @@
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
+
+* {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+.main-grid {
+  width: 82%;
+  margin: 5.14rem auto;
+  display: grid;
+  gap: 0;
+  grid-template-areas:
+    "one"
+    "two"
+    "three";
+}
+
+.join {
+  grid-area: one;
+}
+
+.subscription {
+  grid-area: two;
+}
+
+.why-us {
+  grid-area: three;
+}
+
+.join,
+.subscription,
+.why-us {
+  padding: 1.5rem;
+}
+
+.join h1 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.46125rem;
+  letter-spacing: -0.015625rem;
+}
+
+.join h1,
+h2,
+h3,
+.price,
+.btn {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.315rem;
+  letter-spacing: -0.01375rem;
+}
+
+h3 {
+  font-size: 0.9375rem; /* 15px */
+  letter-spacing: -0.011875rem;
+}
+
+h3,
+.list {
+  line-height: 1.25rem;
+}
+
+.join p,
+.list {
+  font-size: 0.875rem; /* 14px */
+  letter-spacing: -0.010625rem;
+}
+
+.join p,
+.subscription p,
+.list {
+  font-weight: 400;
+}
+.join p,
+.subscription p {
+  line-height: 1.625rem; /* 26px */
+}
+
+.subscription p,
+.btn {
+  font-size: 1rem;
+  letter-spacing: -0.0125rem;
+}
+
+.price {
+  font-size: 2rem; /* 32px */
+  line-height: 2.338rem;
+  letter-spacing: 0.025rem;
+  vertical-align: middle;
+}
+
+.btn {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 1rem 6.25rem;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 0.25rem;
+  line-height: 1.16875rem;
+}
+
+.list {
+  list-style-type: none;
+}
+
+@media (min-width: 1024px) {
+  .main-grid {
+    grid-template-areas:
+      "one one"
+      "two three";
+  }
+}

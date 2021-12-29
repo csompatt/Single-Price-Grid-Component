@@ -15,7 +15,7 @@ html {
 
 body {
   width: 100vw;
-  background: rgb(152, 166, 189);
+  background: rgb(222, 235, 243);
 }
 
 .main-grid {
@@ -28,6 +28,7 @@ body {
     "two"
     "three";
   overflow: hidden;
+  box-shadow: 0 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .join {
@@ -70,6 +71,7 @@ body {
   text-decoration: none;
   background: rgb(192, 223, 52);
   line-height: 1.16875rem;
+  box-shadow: 0 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .subscription-p:nth-child(2) {
@@ -149,6 +151,20 @@ body {
 }
 
 @media (min-width: 1024px) {
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 5rem;
+  }
+
   .main-grid {
     width: 39.6875rem;
     grid-template-areas:
@@ -156,6 +172,7 @@ body {
       "two three";
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 13.5rem 1fr;
+    margin: 0;
   }
 
   .join,
